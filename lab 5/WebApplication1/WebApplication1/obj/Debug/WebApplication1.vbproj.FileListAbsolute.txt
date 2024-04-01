@@ -1,0 +1,8 @@
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\bin\WebApplication1.xml
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\obj\Debug\WebApplication1.xml
+D:\Users\s11219309\Downloads\lab 5\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

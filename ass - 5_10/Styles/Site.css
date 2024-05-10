@@ -1,0 +1,70 @@
+﻿body   
+{
+    background: #fff;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10%;
+    top: 59px;
+    left: 0px;
+}
+
+
+.main
+{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 420px;
+}
+
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+.title
+{
+    display: flex;
+    align-items: center;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar li
+{
+    margin: 0px 15px;
+}
+
+.navbar-login
+{
+    margin-left: auto;
+    margin-right: 0;
+    color: Green;
+    float: right;
+}

@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css?t=<%= DateTime.Now.Ticks %>" rel="stylesheet" type="text/css"  />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="application/javascript">
+        function run() {
+            console.log('hello');
+        }
+        
+    </script>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <div> 
+                    <img alt="NoMoreFever comany logo" src="images/heartlogo.png" title="Logo" height="75px" />
+                </div>
+                <h1>
+                    NoMoreFever 
+                </h1>
+            </div>
+            
+            <div class="navbar">
+                <ul class="nav-items">
+                <li class="dropdown">
+                    <h3>
+                    <a href="#">Home</a>
+                    </h3>
+                </li>
+                <li class="dropdown">
+                    <h3>About</h3>
+
+                    <div class="dropdown-content">
+                    <h3>
+                        <a href="#">Mission</a>
+                    </h3>
+                    <h3>
+                        <a href="#">Vision</a>
+                    </h3>
+                    <h3>
+                        <a href="#">People</a>
+                    </h3>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <h3>Contact</h3>
+                    <div class="dropdown-content">
+                    <h3>
+                        <a href="#">Call Us</a>
+                    </h3>
+                    <h3>
+                        <a href="#">Email</a>
+                    </h3>
+                    <h3>
+                        <a href="#">Office</a>
+                    </h3>
+                    </div>
+                </li>
+                <li>
+                    <input type="text" placeholder="Search..." />
+                    <button>Search</button>
+                </li>
+            </ul>
+            </div>
+            <div class="navbar-login">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <a class="call-to-action-btn" href="~/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
